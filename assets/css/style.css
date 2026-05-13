@@ -1,0 +1,61 @@
+/*Adicionar Font baixada */
+@font-face {
+    /**Nomeia a fonte escolhida */
+    font-family: "IntelOneMono";
+    /**(Indica o caminho do arquivo da fonte */
+    src: url("/assets/fonts/IntelOneMono-VariableFont_wght.ttf") format("truetype");
+    /**Define a espessura da fonte */
+    font-weight: normal;
+}
+
+/* RESET CSS*/ 
+* {
+    /**Reseta o margem padrão do navegador*/
+    margin: 0;
+    /** Não permite que o navegador altere o tamanho da caixa*/
+    box-sizing: border-box;
+}
+
+/* BODY(CORPO) */
+
+body{
+    /** Chama a fonte escolhida*/
+      font-family: "IntelOneMono";
+    /** Define a cor do texto*/
+    color: #333333;
+    /**Define a cor de fundo*/
+    background-color: rgb(241, 248, 248);
+    /**Controla o espaço entre as linhas de texto*/
+    line-height: 1.7;
+}
+
+/**Cabeçalho*/
+
+header {
+    background-color: #d8f3dc ;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.menu-navegacao {
+    background-color: #f0f4f8;
+    padding: 15px;
+    border-bottom: 2px solid green;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: 100;
+}
+.menu-navegacao a {
+    margin: 0;
+    color: green;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;   
+}
+
+.menu-navegacao a:hover,.ativo {
+    border-bottom: 3px solid #f69337;
+}
+
