@@ -1,19 +1,26 @@
 /*Adicionar Font baixada */
 @font-face {
+
     /**Nomeia a fonte escolhida */
     font-family: "IntelOneMono";
+
     /**(Indica o caminho do arquivo da fonte */
     src: url("/assets/fonts/IntelOneMono-VariableFont_wght.ttf") format("truetype");
+
     /**Define a espessura da fonte */
     font-weight: normal;
+
 }
 
 /* RESET CSS*/ 
 * {
+
     /**Reseta o margem padrão do navegador*/
     margin: 0;
+
     /** Não permite que o navegador altere o tamanho da caixa*/
     box-sizing: border-box;
+
 }
 
 /* BODY(CORPO) */
@@ -21,41 +28,80 @@
 body{
     /** Chama a fonte escolhida*/
       font-family: "IntelOneMono";
+
     /** Define a cor do texto*/
     color: #333333;
+
     /**Define a cor de fundo*/
     background-color: rgb(241, 248, 248);
+
     /**Controla o espaço entre as linhas de texto*/
     line-height: 1.7;
+
 }
 
 /**Cabeçalho*/
 
 header {
+
+    /**Cor de fundo do header*/
     background-color: #d8f3dc ;
+
+    /**Alinha o texto no centro da página*/
     text-align: center;
+
+    /** Espaçamento interno: empurra o conteúdo para dentro */
     padding: 40px 20px;
+
 }
 
 .menu-navegacao {
+
+    /**Cor de fundo do menu de navegação*/
     background-color: #f0f4f8;
+
+    /** Espaçamento interno: empurra o conteúdo para dentro */
     padding: 15px;
+
+    /** Cria uma borda verde apenas em baixo com 2px de espessura*/
     border-bottom: 2px solid green;
-    position: fixed;
+
+    /** Fixa o elemento na tela: ele não sobe nem desce com o scroll */
+    position: fixed; 
+
+    /**Coloca o elemento colado ao topo máximo da janela*/
     top: 0;
+
+    /**Coloca o elemento no máximo a esquerda da janela*/
     left: 0;
+
+    /**garante que ele ocupe toda a largura da janela*/
     width: 100vw;
+
+    /** Camada: números maiores ficam por cima de números menores */
     z-index: 100;
+
 }
+
 .menu-navegacao a {
-    margin: 0;
+    /**Define a cor do texto */
     color: green;
+
+    /** Remove o sublinhado padrão dos links */
     text-decoration: none;
+
+    /**Define a espessura do texto*/
     font-weight: bold;
+
+    /** Suaviza a mudança em 0.3 segundos */
     transition: 0.3s;   
 }
 
+/** houver: Altera propriedades assim que o mouse enconsta no elemento*/
 .menu-navegacao a:hover,.ativo {
-    border-bottom: 3px solid #f69337;
+
+    /** Cria uma borda Laranja apenas em baixo com 2px de espessura*/
+      border-bottom: 3px solid #f69337;
+
 }
 
