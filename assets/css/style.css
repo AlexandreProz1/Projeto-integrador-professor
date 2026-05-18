@@ -21,13 +21,14 @@
     /** Não permite que o navegador altere o tamanho da caixa*/
     box-sizing: border-box;
 
+    font-size: 10px;
 }
 
 /* BODY(CORPO) */
 
 body{
     /** Chama a fonte escolhida*/
-      font-family: "IntelOneMono";
+      font-family: 'IntelOneMono';
 
     /** Define a cor do texto*/
     color: #333333;
@@ -43,7 +44,7 @@ body{
 /**Cabeçalho*/
 
 header {
-
+    
     /**Cor de fundo do header*/
     background-color: #d8f3dc ;
 
@@ -52,6 +53,7 @@ header {
 
     /** Espaçamento interno: empurra o conteúdo para dentro */
     padding: 40px 20px;
+
 
 }
 
@@ -94,7 +96,7 @@ header {
     font-weight: bold;
 
     /** Suaviza a mudança em 0.3 segundos */
-    transition: 0.3s;   
+    transition: 0.4s;   
 }
 
 /** houver: Altera propriedades assim que o mouse enconsta no elemento*/
@@ -105,3 +107,14 @@ header {
 
 }
 
+.emoji {
+    font-size: 80px;
+    margin-bottom: 10px;
+}
+
+h1{
+    color: #2d6a4f;
+    font-size: 2.2em;
+    margin: 0px 0 10px;
+    
+}
