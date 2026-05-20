@@ -103,18 +103,92 @@ header {
 .menu-navegacao a:hover,.ativo {
 
     /** Cria uma borda Laranja apenas em baixo com 2px de espessura*/
-      border-bottom: 3px solid #f69337;
+    border-bottom: 2px solid #f69337;
+    
 
 }
 
+
 .emoji {
+    /** Emoji é lido como texto por isso usamos font-size para aumentar seu tamanho*/
     font-size: 80px;
+    /**Adiciona margem para baixo*/
     margin-bottom: 10px;
 }
 
 h1{
+    /**Define a cor do título*/
     color: #2d6a4f;
+    /** define o tamanho do título(rem é a multiplicaçao do tamanho da font raiz vezes o valor definido)*/
     font-size: 2.2em;
+    /**Define margem(Com 3 valores: o primeiro é para ⬆️, o segundo ⬅️➡️ e o terceiro ⬇️*/ 
     margin: 0px 0 10px;
     
+}
+
+/*! Desafios:
+/** Trocar os emojis por imagens
+/** Colocar as cores de preferência
+/** Trocar os textos por textos referentes ao tema escolhido
+/** Trocar fonte(interna, link ou import)
+*/
+
+/* ----- main -----*/
+
+section {
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.secao-cinza {
+    background-color: #ffffff;
+    max-width: 100%;
+}
+
+.container-central {
+    max-width: 800px;
+    margin: 0 auto;
+}
+h2{
+    color: #2d6a4f;
+    border-left: 4px solid #f6ad55;
+    padding-left: 15px;
+}
+
+/* lista e itens da lista*/
+ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+}
+
+li {
+    background-color: #e6f4ea;
+    padding: 12px 18px;
+    margin-bottom:  8px;
+    border-radius: 8px;
+    border-left: 5px solid #2d6a4f ;
+}
+footer {
+    background-color:#1a3c34 ;
+    color: white;
+    text-align: center;
+    cursor: default;
+    padding-top: 15px;
+}
+.botao {
+    display: inline-block;
+    background-color: #f69337;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 15px 0;
+}
+span {
+    font-weight: bold;
+    font-size: 15px;
+    color:#326d0d
 }
