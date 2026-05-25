@@ -64,9 +64,6 @@ header {
 
 }
 
-main {
-    flex: 1;
-}
 
 .menu-navegacao {
 
@@ -111,6 +108,7 @@ main {
 }
 
 /** houver: Altera propriedades assim que o mouse enconsta no elemento*/
+
 .menu-navegacao a:hover,.ativo {
 
     /** Cria uma borda Laranja apenas em baixo com 2px de espessura*/
@@ -145,6 +143,10 @@ h1{
 */
 
 /* ----- main -----*/
+main {
+    flex: 1;
+}
+
 
 section {
     padding: 40px 20px;
